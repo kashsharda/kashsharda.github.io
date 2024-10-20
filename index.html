@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Your Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
@@ -11,17 +11,17 @@
             font-family: 'Press Start 2P', cursive; /* Pixel font */
             color: #2C3E50; /* Text color */
             text-align: center;
-            margin: 0; /* Reset default margin */
-            padding: 20px; /* Add some padding around body */
+            margin: 0;
+            padding: 20px;
         }
         header {
             padding: 20px;
             background-color: #009B9F; /* Darker teal */
             border-radius: 10px;
-            color: white; /* Text color in header */
+            color: white;
         }
         .profile-photo {
-            width: 150px; /* Adjust size as needed */
+            width: 150px;
             height: auto;
             border-radius: 50%;
             border: 2px solid #5c4d8d;
@@ -33,14 +33,14 @@
             border: 2px solid #D1D1D1; /* Soft gray border */
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft shadow */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .progress-container {
             margin: 10px 0;
             text-align: left;
         }
         .progress-bar {
-            background-color: #D1D1D1; /* Progress bar background */
+            background-color: #D1D1D1;
             border-radius: 25px;
             height: 20px;
             width: 100%;
@@ -49,24 +49,29 @@
         .progress-fill {
             height: 100%;
             border-radius: 25px;
-            transition: width 0.5s ease; /* Smooth transition */
+            transition: width 0.5s ease;
         }
-        /* Different colors for each programming language */
         .java { background-color: #FFB84D; }
         .python { background-color: #73D17A; }
         .javascript { background-color: #58A1D9; }
         .html { background-color: #FF6B6B; }
         .sql { background-color: #A55DB7; }
         .flutter { background-color: #F9E58E; }
+        .experience, .leadership {
+            text-align: left; /* Align text to the left for experience sections */
+        }
+        h2 {
+            margin-top: 0; /* Remove top margin for headings */
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="your-photo.jpg" alt="Kashish Sharda" class="profile-photo">
+    <img src="your-photo.jpg" alt="Your Name" class="profile-photo">
     <h1>Welcome to My Portfolio!</h1>
     <h2>Your Name</h2>
-    <p>[<a href="https://linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://github.com/your-github">GitHub</a>]</p>
+    <p>[Email | Phone | <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://github.com/your-github">GitHub</a>]</p>
 </header>
 
 <section id="skills">
@@ -104,8 +109,42 @@
     </div>
 </section>
 
-</body>
-</html>
+<section id="experience">
+    <h2>Technical Experience</h2>
+    <div class="experience">
+        <h3>Projects</h3>
+        <ul>
+            <li><strong>Konigsberg Bridge Problem (2024):</strong> Developed a program using graph ADTs and algorithms to find paths in a generalized version of the problem.</li>
+            <li><strong>Train Station Simulation (2024):</strong> Created a simulation managing train arrivals/departures using a Priority Queue for platform allocation.</li>
+            <li><strong>Twenty Questions (2024):</strong> Built a Java program using Binary Search Trees for the classic game, allowing user responses and dynamic question flow.</li>
+            <li><strong>Hashing Tickets (2024):</strong> Developed a ticket management system using a hash table for storage and retrieval based on unique serial numbers.</li>
+            <li><strong>LinkHer (In Progress):</strong> Working on a Flutter project to create a journal site connecting women in Computer Science.</li>
+        </ul>
+    </div>
+</section>
 
+<section id="leadership">
+    <h2>Leadership Experience</h2>
+    <div class="leadership">
+        <ul>
+            <li><strong>Student Council Leader (2017-2023)</strong></li>
+            <li><strong>Tutor and Mentor (July 2017 - December 2023):</strong> Guided high school students in English, Math, and Computer Science.</li>
+            <li><strong>WICS (Women In Computer Science) Member (2022-Present)</strong></li>
+            <li><strong>Rotaract Club Member (August 2022-Present):</strong> Involved in a winter clothing drive for Indigenous communities in Canada.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="work">
+    <h2>Work Experience</h2>
+    <div class="work">
+        <ul>
+            <li><strong>EMAAR Internship (Jan 2019 - Mar 2019):</strong> Assisted the IT department in data entry tasks.</li>
+            <li><strong>KUMON INC. (May 2022 – May 2024):</strong> Worked as a Teaching Assistant and Early Learners Teacher.</li>
+        </ul>
+    </div>
+</section>
+
+</body>
 </html>
 
