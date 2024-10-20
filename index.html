@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Reference to your CSS file -->
+    <style>
+        body {
+            background-color: #f5f0ff; /* Light pastel background */
+            font-family: 'Press Start 2P', cursive; /* Fun pixel font */
+            color: #2c3e50; /* Darker text for readability */
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #dcd0e7; /* Soft lavender header */
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3rem; /* Larger for game opening effect */
+            color: #5c4d8d; /* Darker purple for contrast */
+            text-shadow: 2px 2px #dcd0e7; /* Subtle shadow effect */
+        }
+
+        .pixel-logo {
+            width: 100px;
+            height: auto;
+        }
+
+        section {
+            margin: 40px 0;
+            background-color: #e8e1f5; /* Lighter lavender for sections */
+            border: 2px solid #dcd0e7; /* Soft border */
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .level-bar {
+            background-color: #d1c6e7; /* Soft lilac */
+            border-radius: 25px;
+            height: 20px;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .level-fill {
+            height: 100%;
+            width: 70%; /* Adjust according to proficiency */
+            background-color: #a47cb5; /* Softer mauve fill */
+            border-radius: 25px;
+        }
+
+        .pixel-icon {
+            width: 40px;
+            height: auto;
+        }
+
+        footer {
+            margin: 20px 0;
+            background-color: #dcd0e7; /* Same soft lavender footer */
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Your Personal Logo" class="pixel-logo">
+        <h1>Welcome to Your Adventure!</h1>
+        <h2>Kashish Sharda</h2> <!-- Name displayed prominently -->
+        <p>[<a href="https://linkedin.com/in/kashishsharda">LinkedIn</a> | <a href="https://github.com/kashsharda">GitHub</a>]</p>
+    </header>
+
+    <section id="about">
+        <h2><img src="about-icon.png" alt="About Me" class="pixel-icon"> About Me</h2>
+        <p>I am a dedicated computer science student with a passion for technology and innovation. I enjoy tackling complex challenges through my projects and constantly seek opportunities for growth and learning!</p>
+    </section>
+
+    <section id="skills">
+        <h2><img src="skills-icon.png" alt="Skills" class="pixel-icon"> Level Up: Skills</h2>
+        <h3>Technological Skills</h3>
+        <p>Java, Python, JavaScript, HTML, SQL, Flutter (In Progress)</p>
+        <div class="level-bar">
+            <div class="level-fill"></div>
+        </div>
+
+        <h3>Languages</h3>
+        <p>English (Fluent), Hindi (Proficient), Arabic (Beginner)</p>
+    </section>
+
+    <section id="projects">
+        <h2><img src="projects-icon.png" alt="Projects" class="pixel-icon"> Quests Completed: Projects</h2>
+        <ul>
+            <li><strong>Konigsberg Bridge Problem (2024):</strong> Solved the classic problem using graph algorithms.</li>
+            <li><strong>Train Station Simulation (2024):</strong> Built a priority queue system for platform allocation.</li>
+            <li><strong>Twenty Questions (2024):</strong> Created a dynamic game using Binary Search Trees.</li>
+            <li><strong>LinkHer (In Progress):</strong> Developing a journal site for women in computer science.</li>
+        </ul>
+    </section>
+
+    <section id="leadership">
+        <h2><img src="leadership-icon.png" alt="Leadership" class="pixel-icon"> Leadership</h2>
+        <p>Student Council Leader, WICS Member, Tutor, Mentor</p>
+    </section>
+
+    <footer>
+        <p>Game Over! Thanks for visiting my resume.</p>
+    </footer>
+</body>
+</html>
 
