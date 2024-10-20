@@ -3,113 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Resume</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Reference to your CSS file -->
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f5f0ff; /* Light pastel background */
-            font-family: 'Press Start 2P', cursive; /* Fun pixel font */
-            color: #2c3e50; /* Darker text for readability */
+            background-color: #A4D6E1; /* Light teal background */
+            font-family: 'Press Start 2P', cursive; /* Pixel font */
+            color: #2C3E50; /* Text color */
             text-align: center;
+            margin: 0; /* Reset default margin */
+            padding: 20px; /* Add some padding around body */
         }
-
         header {
             padding: 20px;
-            background-color: #dcd0e7; /* Soft lavender header */
+            background-color: #009B9F; /* Darker teal */
             border-radius: 10px;
+            color: white; /* Text color in header */
         }
-
-        h1 {
-            font-size: 3rem; /* Larger for game opening effect */
-            color: #5c4d8d; /* Darker purple for contrast */
-            text-shadow: 2px 2px #dcd0e7; /* Subtle shadow effect */
-        }
-
-        .pixel-logo {
-            width: 100px;
+        .profile-photo {
+            width: 150px; /* Adjust size as needed */
             height: auto;
+            border-radius: 50%;
+            border: 2px solid #5c4d8d;
+            margin-bottom: 10px;
         }
-
         section {
             margin: 40px 0;
-            background-color: #e8e1f5; /* Lighter lavender for sections */
-            border: 2px solid #dcd0e7; /* Soft border */
+            background-color: #E1B7E7; /* Light lavender */
+            border: 2px solid #D1D1D1; /* Soft gray border */
             border-radius: 10px;
             padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft shadow */
         }
-
-        .level-bar {
-            background-color: #d1c6e7; /* Soft lilac */
+        .progress-container {
+            margin: 10px 0;
+            text-align: left;
+        }
+        .progress-bar {
+            background-color: #D1D1D1; /* Progress bar background */
             border-radius: 25px;
             height: 20px;
-            width: 80%;
-            margin: 0 auto;
+            width: 100%;
             overflow: hidden;
         }
-
-        .level-fill {
+        .progress-fill {
             height: 100%;
-            width: 70%; /* Adjust according to proficiency */
-            background-color: #a47cb5; /* Softer mauve fill */
             border-radius: 25px;
+            transition: width 0.5s ease; /* Smooth transition */
         }
-
-        .pixel-icon {
-            width: 40px;
-            height: auto;
-        }
-
-        footer {
-            margin: 20px 0;
-            background-color: #dcd0e7; /* Same soft lavender footer */
-            border-radius: 10px;
-            padding: 10px;
-        }
+        /* Different colors for each programming language */
+        .java { background-color: #FFB84D; }
+        .python { background-color: #73D17A; }
+        .javascript { background-color: #58A1D9; }
+        .html { background-color: #FF6B6B; }
+        .sql { background-color: #A55DB7; }
+        .flutter { background-color: #F9E58E; }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Your Personal Logo" class="pixel-logo">
-        <h1>Welcome to Your Adventure!</h1>
-        <h2>Kashish Sharda</h2> <!-- Name displayed prominently -->
-        <p>[<a href="https://linkedin.com/in/kashishsharda">LinkedIn</a> | <a href="https://github.com/kashsharda">GitHub</a>]</p>
-    </header>
 
-    <section id="about">
-        <h2><img src="about-icon.png" alt="About Me" class="pixel-icon"> About Me</h2>
-        <p>I am a dedicated computer science student with a passion for technology and innovation. I enjoy tackling complex challenges through my projects and constantly seek opportunities for growth and learning!</p>
-    </section>
+<header>
+    <img src="your-photo.jpg" alt="Kashish Sharda" class="profile-photo">
+    <h1>Welcome to My Portfolio!</h1>
+    <h2>Your Name</h2>
+    <p>[<a href="https://linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://github.com/your-github">GitHub</a>]</p>
+</header>
 
-    <section id="skills">
-        <h2><img src="skills-icon.png" alt="Skills" class="pixel-icon"> Level Up: Skills</h2>
-        <h3>Technological Skills</h3>
-        <p>Java, Python, JavaScript, HTML, SQL, Flutter (In Progress)</p>
-        <div class="level-bar">
-            <div class="level-fill"></div>
-        </div>
+<section id="skills">
+    <h2><img src="skills-icon.png" alt="Skills" class="pixel-icon"> Level Up: Skills</h2>
+    
+    <h3>Technological Skills</h3>
+    <div class="progress-container">
+        <span>Java</span>
+        <div class="progress-bar"><div class="progress-fill java" style="width: 80%;"></div></div>
+    </div>
+    
+    <div class="progress-container">
+        <span>Python</span>
+        <div class="progress-bar"><div class="progress-fill python" style="width: 70%;"></div></div>
+    </div>
+    
+    <div class="progress-container">
+        <span>JavaScript</span>
+        <div class="progress-bar"><div class="progress-fill javascript" style="width: 75%;"></div></div>
+    </div>
+    
+    <div class="progress-container">
+        <span>HTML</span>
+        <div class="progress-bar"><div class="progress-fill html" style="width: 90%;"></div></div>
+    </div>
+    
+    <div class="progress-container">
+        <span>SQL</span>
+        <div class="progress-bar"><div class="progress-fill sql" style="width: 60%;"></div></div>
+    </div>
+    
+    <div class="progress-container">
+        <span>Flutter (In Progress)</span>
+        <div class="progress-bar"><div class="progress-fill flutter" style="width: 40%;"></div></div>
+    </div>
+</section>
 
-        <h3>Languages</h3>
-        <p>English (Fluent), Hindi (Proficient), Arabic (Beginner)</p>
-    </section>
-
-    <section id="projects">
-        <h2><img src="projects-icon.png" alt="Projects" class="pixel-icon"> Quests Completed: Projects</h2>
-        <ul>
-            <li><strong>Konigsberg Bridge Problem (2024):</strong> Solved the classic problem using graph algorithms.</li>
-            <li><strong>Train Station Simulation (2024):</strong> Built a priority queue system for platform allocation.</li>
-            <li><strong>Twenty Questions (2024):</strong> Created a dynamic game using Binary Search Trees.</li>
-            <li><strong>LinkHer (In Progress):</strong> Developing a journal site for women in computer science.</li>
-        </ul>
-    </section>
-
-    <section id="leadership">
-        <h2><img src="leadership-icon.png" alt="Leadership" class="pixel-icon"> Leadership</h2>
-        <p>Student Council Leader, WICS Member, Tutor, Mentor</p>
-    </section>
-
-    <footer>
-        <p>Game Over! Thanks for visiting my resume.</p>
-    </footer>
 </body>
+</html>
+
 </html>
 
