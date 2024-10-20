@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Minecraft&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #A4D6E1; /* Light teal background */
-            font-family: 'Press Start 2P', cursive; /* Pixel font */
+            font-family: 'Roboto', sans-serif; /* Main font for text */
             color: #2C3E50; /* Text color */
             text-align: center;
             margin: 0;
@@ -34,13 +34,23 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex; /* Flexbox for layout */
+            justify-content: space-around; /* Space between sections */
+        }
+        .intro {
+            flex: 1; /* Allow intro section to take available space */
+            margin-right: 20px; /* Add space between sections */
+        }
+        .skills, .technologies {
+            flex: 1; /* Allow skills and technologies sections to take available space */
+            text-align: left; /* Align text to the left for experience sections */
         }
         .progress-container {
             margin: 10px 0;
             text-align: left;
         }
         .progress-bar {
-            background-color: #D1D1D1;
+            background-color: #D1D1D1; /* Progress bar background */
             border-radius: 25px;
             height: 20px;
             width: 100%;
@@ -49,7 +59,7 @@
         .progress-fill {
             height: 100%;
             border-radius: 25px;
-            transition: width 0.5s ease;
+            transition: width 0.5s ease; /* Smooth transition */
         }
         .java { background-color: #FFB84D; }
         .python { background-color: #73D17A; }
@@ -57,55 +67,74 @@
         .html { background-color: #FF6B6B; }
         .sql { background-color: #A55DB7; }
         .flutter { background-color: #F9E58E; }
-        .experience, .leadership {
-            text-align: left; /* Align text to the left for experience sections */
-        }
         h2 {
+            font-family: 'Minecraft', cursive; /* Pixel font for headings */
             margin-top: 0; /* Remove top margin for headings */
+        }
+        h3 {
+            font-family: 'Minecraft', cursive; /* Pixel font for subheadings */
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="your-photo.jpg" alt="Your Name" class="profile-photo">
+    <img src="your-photo.jpg" alt="Kashish Sharda" class="profile-photo">
     <h1>Welcome to My Portfolio!</h1>
     <h2>Kashish Sharda</h2>
-    <p>[<a href="kashsharda14@gmail.com">Email</a> | <a href="https://linkedin.com/in/kashishsharda">LinkedIn</a> | <a href="https://github.com/kashsharda">GitHub</a>]</p>
+    <p>[<a href="kashsharda14@gmail.com">Email</a> |<a href="https://linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://github.com/your-github">GitHub</a>]</p>
 </header>
 
-<section id="skills">
-    <h2><img src="skills-icon.png" alt="Skills" class="pixel-icon"> Level Up: Skills</h2>
-    
-    <h3>Technological Skills</h3>
-    <div class="progress-container">
-        <span>Java</span>
-        <div class="progress-bar"><div class="progress-fill java" style="width: 80%;"></div></div>
+<section>
+    <div class="intro">
+        <h2>About Me</h2>
+        <p>A passionate computer science enthusiast with a knack for coding and a love for problem-solving. Always eager to learn and collaborate on exciting projects.</p>
     </div>
-    
-    <div class="progress-container">
-        <span>Python</span>
-        <div class="progress-bar"><div class="progress-fill python" style="width: 70%;"></div></div>
+
+    <div class="skills">
+        <h2><img src="skills-icon.png" alt="Skills" class="pixel-icon"> Level Up: Skills</h2>
+        <h3>Programming Languages</h3>
+        <div class="progress-container">
+            <span>Java</span>
+            <div class="progress-bar"><div class="progress-fill java" style="width: 80%;"></div></div>
+        </div>
+        <div class="progress-container">
+            <span>Python</span>
+            <div class="progress-bar"><div class="progress-fill python" style="width: 70%;"></div></div>
+        </div>
+        <div class="progress-container">
+            <span>JavaScript</span>
+            <div class="progress-bar"><div class="progress-fill javascript" style="width: 75%;"></div></div>
+        </div>
+        <div class="progress-container">
+            <span>HTML</span>
+            <div class="progress-bar"><div class="progress-fill html" style="width: 90%;"></div></div>
+        </div>
+        <div class="progress-container">
+            <span>SQL</span>
+            <div class="progress-bar"><div class="progress-fill sql" style="width: 60%;"></div></div>
+        </div>
+        <div class="progress-container">
+            <span>Flutter (In Progress)</span>
+            <div class="progress-bar"><div class="progress-fill flutter" style="width: 40%;"></div></div>
+        </div>
     </div>
-    
-    <div class="progress-container">
-        <span>JavaScript</span>
-        <div class="progress-bar"><div class="progress-fill javascript" style="width: 75%;"></div></div>
-    </div>
-    
-    <div class="progress-container">
-        <span>HTML</span>
-        <div class="progress-bar"><div class="progress-fill html" style="width: 90%;"></div></div>
-    </div>
-    
-    <div class="progress-container">
-        <span>SQL</span>
-        <div class="progress-bar"><div class="progress-fill sql" style="width: 60%;"></div></div>
-    </div>
-    
-    <div class="progress-container">
-        <span>Flutter (In Progress)</span>
-        <div class="progress-bar"><div class="progress-fill flutter" style="width: 40%;"></div></div>
+
+    <div class="technologies">
+        <h2>Technologies</h2>
+        <h3>Other Skills</h3>
+        <ul>
+            <li>SNAP</li>
+            <li>GitHub</li>
+            <li>RCode</li>
+            <li>Fortran</li>
+        </ul>
+        <h3>Languages</h3>
+        <ul>
+            <li>Fluent: English (IELTS Band 8.0)</li>
+            <li>Proficient: Hindi (Reading/Writing)</li>
+            <li>Beginner: Arabic, Tamil, Urdu, Punjabi, Kannada</li>
+        </ul>
     </div>
 </section>
 
